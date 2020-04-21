@@ -1,0 +1,53 @@
+@import url("./normalize.min.css");
+@import url("./typography.css");
+@import url("./layout.css");
+@import url("./colors.css");
+@import url("./global.css");
+
+.post-card {
+    margin-bottom: 50px;
+}
+
+.post-figure{
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.post-figure > img {
+    border-radius: 5px 5px 0 0;
+}
+
+.post-figure > figcaption{
+    line-height: 1rem;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.post-metadata > small {
+    margin-right: 10px;
+}
+
+.read-more {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.popular {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+/* layout */
+@media screen and (min-width: 900px){
+    .content{
+        grid-column: 2/9;    
+    }
+    
+    .sidebar{
+        grid-column: 10/14;
+    }
+}

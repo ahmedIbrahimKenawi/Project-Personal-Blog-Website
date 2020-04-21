@@ -1,0 +1,75 @@
+@import url("./normalize.min.css");
+@import url("./typography.css");
+@import url("./layout.css");
+@import url("./postpage-layout.css");
+@import url("./colors.css");
+@import url("./global.css");
+
+
+.content > article {
+    max-width: 750px;
+    margin: 0 auto 100px;
+}
+
+.quote{
+    width:80%;
+    margin:0 auto;
+    padding: 50px;
+    border-left:8px solid rgb(73, 169, 228) ;
+    position: relative;
+}
+  
+.quote::before{
+    content: "\201C";
+    color: rgb(73, 169, 228);
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+  }
+
+.quote span{
+    display:block;
+}
+
+.post-img{
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.post-img > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-img > figcaption{
+    line-height: 1rem;
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+/* layout */
+@media screen and (min-width: 900px){
+    .content{
+        grid-column: 2/14;    
+    }
+    
+    .sidebar{
+        grid-column: 2/14;
+    
+        display: grid;
+        grid-template-columns: 1fr 5% 1fr;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    .sidebar > .author {
+        grid-column: 1/2;
+    }
+
+    .sidebar > .social {
+        grid-column: 3/4;
+    }
+}

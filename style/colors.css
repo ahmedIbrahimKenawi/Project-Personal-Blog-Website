@@ -1,0 +1,72 @@
+:root{
+    --text-color: rgb(50, 50, 50);
+    --lightgray-1: rgb(240, 240, 240);
+    --lightgray-2: rgb(225, 225, 225);
+    --lightgray-3: rgb(200, 200, 200);
+    --shadow : rgb(175, 175, 175);
+    --lightblue-1: rgb(73, 169, 228);
+    --lightblue-2: rgb(54, 151, 211);
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    background-color: var(--lightgray-1);
+    color: rgb(50, 50, 50);
+    color: var(--text-color);
+}
+
+.post-figure,
+.author,
+.author-img,
+.popular,
+.social {
+    box-shadow: 0 0 10px 2px var(--shadow);
+}
+
+.nav,
+.subscribe,
+.designer,
+.quote {
+    background-color: rgb(225, 225, 225);
+    background-color: var(--lightgray-2);  
+}
+
+a {
+    background-color: transparent;
+    color: rgb(50, 50, 50);
+    color: var(--text-color);
+}
+
+.nav a:hover {
+    background-color: rgb(200, 200, 200);
+    background-color: var(--lightgray-3);
+}
+
+.post-tag,
+.read-more {
+    color: rgb(73, 169, 228);
+    color: var(--lightblue-1);
+}
+
+.post-tag:hover,
+.read-more:hover,
+.popular a:hover {
+    color: rgb(54, 151, 211);
+    color: var(--lightblue-2);
+}
+
+.subscribe input[type=submit] {
+    color: #ffffff;
+    background-color: rgb(73, 169, 228);
+    background-color: var(--lightblue-1);
+}
+
+.subscribe input[type=submit]:hover {
+    background-color: rgb(54, 151, 211);
+    background-color: var(--lightblue-2);
+}
+
+.fab {
+    color: rgb(50, 50, 50);
+    color: var(--text-color);
+}

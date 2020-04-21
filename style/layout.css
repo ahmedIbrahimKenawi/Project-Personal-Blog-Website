@@ -1,0 +1,99 @@
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: 5% repeat(12, 1fr)  5%;
+}
+
+
+.header {
+    grid-column: 1/15;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    grid-column: 1/15;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    grid-column: 2/14;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+
+.sidebar{
+    grid-column: 2/14;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.footer {
+    grid-column: 1/15;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.designer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* grid */
+.author {
+    display: grid;
+    grid-template-areas: 
+       "img img name name"
+       "img img info info"
+       "bio bio bio bio";
+
+}
+
+
+
+.author-img {
+    grid-area: img;
+    justify-self: center;
+    align-self: center;
+}
+
+.author-name {
+    grid-area: name;
+    justify-self: start;
+    align-self: flex-end;
+}
+
+.author-info {
+    grid-area: info;
+    justify-self: start;
+    align-self: flex-start;
+}
+
+.author-bio {
+    grid-area: bio;
+}
+
+
+
+
