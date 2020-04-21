@@ -62,7 +62,10 @@ small {
     margin-top: 20px;
 }
 
-
+.author-info,
+.designer {
+    text-decoration: underline;
+}
 
 .subscribe {
     border-radius: 5px;

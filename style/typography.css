@@ -50,3 +50,12 @@ q {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
 }
+
+.author-name,
+.designer {
+    font-weight: bold;
+}
+
+.subscribe > p {
+    font-style: italic;
+}
