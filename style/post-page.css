@@ -1,7 +1,6 @@
 @import url("./normalize.min.css");
 @import url("./typography.css");
 @import url("./layout.css");
-@import url("./postpage-layout.css");
 @import url("./colors.css");
 @import url("./global.css");
 
@@ -32,22 +31,18 @@
     display:block;
 }
 
-.post-img{
+.post-figure{
     max-width: 600px;
     padding: 0;
     margin: 0 auto;
 }
 
-.post-img > img {
+.post-img{
     width: 100%;
     border-radius: 5px;
 }
 
-.post-img > figcaption{
-    line-height: 1rem;
-    margin-left: 5px;
-    text-align: center;
-}
+
 
 
 /* layout */

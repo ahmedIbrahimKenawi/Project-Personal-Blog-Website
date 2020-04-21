@@ -16,6 +16,14 @@ li {
     margin: 20px;
 }
 
+figcaption{
+    text-align: center;
+}
+
+small {
+    margin-right: 10px;
+}
+
 .nav  a {
     padding: 14px 16px;
 }
